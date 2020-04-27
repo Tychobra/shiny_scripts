@@ -4,7 +4,7 @@ Go to the Google Compute Engine (GCE) page at cloud.google.com and create a new 
  
  - choose region us-east-1d (this is our default at Tychobra.  Note: you should try to deploy all
  your GCP services in the same region to reduce latency)
- - select Ubuntu 18.04
+ - select Ubuntu 20.04
  - allow both http and https traffic when configuring the server.
  - just select defaults for everything else
 
