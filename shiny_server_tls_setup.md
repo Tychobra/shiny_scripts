@@ -42,8 +42,23 @@ sudo apt-get update
 sudo apt-get install r-base
 ```
 
- - install Shiny
-    
+ - install Shiny (Specific version required to source `R` directories, but not break `shinyWidgets`)
+   - Reference: https://github.com/rstudio/shiny/commit/210c248264cb3dab714b65c060486a0462f1cfed
+```
+# terminal
+
+sudo R
+```
+
+```
+# R console
+
+install.packages('remotes')
+remotes::install_github('rstudio/shiny', ref = '210c248264cb3dab714b65c060486a0462f1cfed')
+```
+
+
+ - **DEPRECATED:** install Shiny from CRAN
 ```
 # terminal
 sudo su - \
